@@ -35,4 +35,4 @@ for root, dirs, files in os.walk(download_folder):
                 os.replace(file_path, f"{download_folder}/{key}/{scale}/{bpm}/{file}")
                 print(f'{file}: Key: {key}, Scale: {scale}, BPM: {bpm}')
             else:
-                print(f'{file} metadata not found')
+                print(f'{file} Could not get any information')
